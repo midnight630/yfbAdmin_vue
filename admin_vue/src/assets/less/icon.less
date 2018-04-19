@@ -1,0 +1,104 @@
+// 
+// @Author: shine
+// @Email: xiaoshaoqq@gmail.com
+//
+
+
+//注意 注意。把 font-family: 'iconfont';   改为 font-family: 'icon';   
+
+@font-face {
+  font-family: 'icon';  /* project id 445170 */
+  src: url('//at.alicdn.com/t/font_445170_w8stmz1umhdxi529.eot');
+  src: url('//at.alicdn.com/t/font_445170_w8stmz1umhdxi529.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_445170_w8stmz1umhdxi529.woff') format('woff'),
+  url('//at.alicdn.com/t/font_445170_w8stmz1umhdxi529.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_445170_w8stmz1umhdxi529.svg#iconfont') format('svg');
+}
+// 
+// 使用  <span class=" icon icon-jpg"></span>
+// 标签可以随意
+.icon {
+  font-family: "icon" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+}
+
+.icon-jpg:before {
+  content: "\e64b";
+}
+
+.icon-arrow-top:before { //箭头 上
+  content: "\e600";
+}
+
+.icon-edit:before { // 编辑
+  content: "\e602";
+}
+
+.icon-shutdown:before { // 关机
+  content: "\e654";
+}
+
+.icon-msg:before { // 消息
+  content: "\e6ab";
+}
+
+.icon-user:before { // 消息
+  content: "\e62a";
+}
+
+
+
+
+//images icon
+// 
+// 使用  <span class="img-icon img-icon-shrink"></span>
+// 标签可以随意
+.img-icon{
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.img-icon-shrink{ // 侧边收起
+  background-image: url(../images/side_bar/side_btn.png);
+}
+
+.img-icon-side-bar-index{ // 首页
+  background-image: url(../images/side_bar/side_bar_index.png);
+  background-size: cover;
+}
+
+.img-icon-side-bar-person{ // 用户管理
+  background-image: url(../images/side_bar/side_bar_person_adm.png);
+  background-size: cover;
+}
+
+.img-icon-side-bar-media{ // 媒体管理
+  background-image: url(../images/side_bar/side_bar_media_adm.png);
+  background-size: cover;
+}
+
+.img-icon-side-bar-order{ // 订单管理
+  background-image: url(../images/side_bar/side_bar_order_adm.png);
+  background-size: cover;
+}
+
+.img-icon-side-bar-cps{ // cps订单管理
+    background-image: url(../images/side_bar/side_bar_cps_adm.png);
+    background-size: cover;
+}
+
+.img-icon-side-bar-more{ // 更多
+  background-image: url(../images/side_bar/side_bar_more.png);
+  background-size: cover;
+}
+
+
+

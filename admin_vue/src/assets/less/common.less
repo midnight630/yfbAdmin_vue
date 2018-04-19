@@ -1,0 +1,144 @@
+// 
+// @Author: shine
+// @Email: xiaoshaoqq@gmail.com
+// @create: 2017-10-18
+
+@import url(color.less);
+@import url(mixin.less);
+@import url(icon.less);
+
+
+//规范  命名以 g- 开头
+
+
+.g-container{
+	padding:20px 30px;
+}
+
+.g-content-title{
+	& > h3{
+		font-weight: bold;
+		font-size: 20px;
+	} 
+}
+
+.g-superior{
+	color: @color_9;
+}
+
+//页码
+.g-pagination-container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+  & > .el-pagination{
+    display: inline-block;
+  }
+  text-align: center;
+}
+
+.g-filter-container{
+  padding:20px 30px;
+}
+
+
+
+// 字体颜色
+.g-text-warning{  //文字警告
+	color: @color_warn
+}
+.g-text-error{  // 文字错误
+	color:@color_danger
+}
+
+.g-text-danger{  // 文字错误
+	color:@color_danger
+}
+
+.g-text-success{
+	color: @color_success
+}
+
+.g-text-base{
+	color: @a_color
+}
+
+.g-text-ellipsis{ // 省略号
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	display: inline-block;
+}
+
+
+//
+.g-bg{
+
+	&-danger, &-success, &-warning{
+		color:#fff;
+		padding: 2px 5px;
+		border-radius: 4px;
+	}
+	&-danger{
+		background-color: @color_danger
+	}
+
+	&-success{
+		background-color: @color_success
+	}
+
+	&-warning{
+		background-color: @color_warning
+	}
+}
+
+//通用样式
+
+.g-hide{
+	display: none
+}
+
+.g-fl{
+	float: left;
+}
+
+.g-fr{
+	float: right;
+}
+
+.g-cfix{
+	&:before, 
+	&:after { 
+	    content: " "; 
+	    display: table; 
+	} 
+	&:after { 
+	    clear: both; 
+	} 
+}
+
+.g-img-fixed{ // 图片被放置在窗口外  为了SEO优化
+	position: fixed;
+	max-height: 100px;
+	max-height: 100px;
+	top:-1000px;
+	left:-1000px;
+}
+
+
+// 动画
+
+.g-rotate(@rotate){
+	transform:rotate(@rotate);
+	-ms-transform:rotate(@rotate); /* Internet Explorer */
+	-moz-transform:rotate(@rotate); /* Firefox */
+	-webkit-transform:rotate(@rotate); /* Safari 和 Chrome */
+	-o-transform:rotate(@rotate); /* Opera */
+}
+
+.g-rotate-180{
+	.g-rotate(180deg)
+}
+
+
+
+

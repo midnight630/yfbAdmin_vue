@@ -34,3 +34,18 @@ a {
 a:hover {
   text-decoration: none;
 }
+//清除浮动
+.cb{
+  zoom: 1;
+  &:before,
+  &:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+

@@ -42,7 +42,7 @@
             <el-dropdown class=" g-fr user-container" @command="handleCommand">
                 <div class="user-wrapper">
                     <i class="icon icon-user user-face g-fl" style=""></i>
-                    <span class="user-name">西瓜君</span>
+                    <span class="user-name">17706531630</span>
                     <i class="el-icon-arrow-down"></i>
                 </div>
                 <el-dropdown-menu class="user-dropdown" slot="dropdown">
